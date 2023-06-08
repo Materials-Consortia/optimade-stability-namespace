@@ -1,0 +1,26 @@
+$$schema: "https://schemas.optimade.org/meta/v1.2.0/optimade/property_definition"
+$id: "./properties/current/stability/structures/formation_energy_per_atom"
+title: "Formation energy per atom"
+x-optimade-type: "float"
+x-optimade-definition:
+  kind: "property"
+  version: "1.2.0"
+  format: "1.2"
+  name: "formation_energy_per_atom"
+x-optimade-unit-definitions:
+  - $$inherit: "https://schemas.optimade.org/units/v1.2.0/si/general/electronvolt"
+type:
+  - "float"
+  - "null"
+description: |-
+  The computed formation energy of the structure, normalized by the number of atoms.
+
+  **Requirements/Conventions**:
+    - If present, this value MUST be computed using the relevant elemental chemical potentials.
+    - In cases where a database has multiple fidelities of formation energy data, this value should somehow
+      reflect the "best estimate" that is global for the database, i.e., the fidelity used for this field
+      should not vary between entries in this database.
+    - It is RECOMMENDED that additional database-specific metadata on this field is provided at the `/info/structures`
+      endpoint that describes the calculation methods and approximations in full.
+
+x-optimade-unit: "electronvolt"

@@ -1,0 +1,22 @@
+$$schema: "https://schemas.optimade.org/meta/v1.2.0/optimade/property_definition"
+$id: "./properties/current/stability/structures/convex_hull_distance"
+title: "Convex hull distance"
+x-optimade-type: "float"
+x-optimade-definition:
+  kind: "property"
+  version: "1.2.0"
+  format: "1.2"
+  name: "convex_hull_distance"
+x-optimade-unit-definitions:
+  - $$inherit: "https://schemas.optimade.org/units/v1.2.0/si/general/electronvolt"
+type:
+  - "float"
+  - "null"
+description: |-
+  The distance of this structure from the convex hull of stability presented by this database, computed
+  by comparing formation energies per atom.
+
+  **Requirements/Conventions**:
+    - This value SHOULD be computed relative to all other structure entries in the database.
+
+x-optimade-unit: "electronvolt"

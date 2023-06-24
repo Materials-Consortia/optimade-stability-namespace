@@ -1,5 +1,5 @@
 $$schema: "https://schemas.optimade.org/meta/v1.2.0/optimade/property_definition"
-$id: "./properties/current/stability/structures/formation_energy_per_atom"
+$id: "./schemas/src/properties/current/stability/structures/formation_energy_per_atom"
 title: "Formation energy per atom"
 x-optimade-type: "float"
 x-optimade-definition:
@@ -8,7 +8,7 @@ x-optimade-definition:
   format: "1.2"
   name: "formation_energy_per_atom"
 x-optimade-unit-definitions:
-  - $$inherit: "https://schemas.optimade.org/units/v1.2.0/si/general/electronvolt"
+  - $$inherit: "https://schemas.optimade.org/units/v1.2.0/si/general/electronvolt.json"
 type:
   - "float"
   - "null"

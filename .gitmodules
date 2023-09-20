@@ -1,0 +1,3 @@
+[submodule "OPTIMADE"]
+	path = OPTIMADE
+	url = git@github.com:Materials-Consortia/OPTIMADE
